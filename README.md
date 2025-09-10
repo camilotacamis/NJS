@@ -1,4 +1,4 @@
-# Site acessível sobre o gênero Bossa Nova
+# Site acessível sobre o New Jeans
 
 ## Sobre
 Refatoração de um site sobre o grupo New Jeans, implementando recursos de acessibilidade no HTML, CSS e JS, com animações e botões interativos.
