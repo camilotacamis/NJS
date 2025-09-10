@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --laranja-claro: #2acdff;
+    --fundo-principal: #001f5c; /* azul escuro */
+    --texto-principal: #ffffff;
+    --rodape-fundo: #ffffff;
+    --rodape-texto: #333333;
+
+    /* Variáveis de alto contraste */
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
+}
+
+/* Body */
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--fundo-principal);
+    color: var(--texto-principal);
+}
+
+/* Header */
+header {
+    background-color: var(--fundo-principal);
+    color: var(--texto-principal);
+}
+
+.nav-link {
+    color: var(--laranja-claro);
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Sessão inicial */
+.inicio-fundo {
+    background-image: url('img/NewJeans.webp');
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formulário */
+.form-control {
+    background-color: #F1EDEF;
+    color: #333333;
+}
+
+.form-control::placeholder {
+    color: #888888;
+    opacity: 1;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--rodape-fundo);
+    color: var(--rodape-texto);
+    padding: 2rem;
+    text-align: center;
+}
+footer i {
+    color: var(--rodape-texto);
+}
+
+/* Aba de acessibilidade vertical */
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+}
+
+#botao-acessibilidade {
+    border-radius: 0.25rem 0 0 0.25rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+.opcoes-acessibilidade {
+    display: none;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.opcoes-acessibilidade button {
+    width: 50px;
+    padding: 0.3rem 0;
+}
+
+.apresenta-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------- ALTO CONTRASTE ----------------- */
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste #inicio {
+    background: none; /* remove imagem */
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste .fundo-galeria {
+    background: none;
+}

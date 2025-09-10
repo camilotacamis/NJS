@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K-POP | NewJeans</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts + CSS customizado -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="p-4 shadow-sm">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <a href="#inicio">
+        <img src="img/logo NewJeans.jpg" alt="Logotipo do NewJeans" class="nav-img" loading="lazy" width="100">
+      </a>
+
+      <!-- Navegação -->
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Aba de Acessibilidade -->
+  <div id="acessibilidade" class="menu-acessibilidade">
+    <button id="botao-acessibilidade" 
+            class="btn btn-primary fw-bold" 
+            aria-label="Menu de acessibilidade" 
+            aria-expanded="false" 
+            aria-controls="opcoes-acessibilidade">
+      Acessibilidade
+    </button>
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade" role="menu">
+      <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+      <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+      <!-- Botão de contraste -->
+      <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar contraste">
+        <i class="bi bi-shadows"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+
+    <!-- Início -->
+    <section id="inicio" class="my-5">
+      <div class="inicio-fundo d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start">
+        <div class="esquerda-conteudo">
+          <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas ao NewJeans</h1>
+          <img src="img/logosemfundo.png" alt="Logotipo secundário do NewJeans" class="mb-3 img-fluid" width="400" loading="lazy">
+          <a href="#NewJeans" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+          
+        </div>
+      </div>
+    </section>
+
+     <!-- Legenda acessível da imagem de fundo -->
+    <figcaption class="text-center mt-3 text-white">
+      Imagem de fundo com as cinco integrantes do grupo NewJeans posando em roupas jeans, apresentando o tema do site.
+    </figcaption>
+
+   <!-- Sobre o grupo -->
+<section id="NewJeans" class="my-5 pt-5" tabindex="0" aria-label="Seção explicativa sobre o grupo NewJeans">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h2>Quem são o NewJeans?</h2>
+        <p class="p-2">
+          NewJeans (NJZ) é um girl group sul-coreano formado por cinco integrantes: Minji, Hanni, Danielle,
+          Haerin e Hyein. Criado pela ADOR, subsidiária da Hybe Corporation, o grupo estreou em 22 de julho de
+          2022 com o single <em>“Attention”</em>. <br> <small>Fonte: Wikipédia</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Galeria -->
+<section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+  <h2 class="text-center pt-5">Galeria</h2>
+  <div class="container p-3 mt-3 fundo-galeria">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-4">
+        <figure>
+          <img src="img/NEWJEANS-925x540.png" 
+               alt="As cinco integrantes do grupo NewJeans posam juntas contra um fundo azul. Todas estão em roupas casuais da marca Calvin Klein, em tons de branco, azul e rosa claro. Elas estão próximas umas das outras, olhando para a câmera." 
+               class="img-fluid rounded-5 shadow-sm" 
+               loading="lazy">
+          <figcaption class="text-center mt-2 text-white">
+            As cinco integrantes do grupo NewJeans posam juntas contra um fundo azul, usando roupas casuais da Calvin Klein.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="col-md-4">
+        <figure>
+          <img src="img/campanha-calvin-klein-newjeans.webp" 
+               alt="As cinco integrantes do grupo NewJeans estão em pé lado a lado contra um fundo azul. Todas vestem calças jeans largas e camisetas brancas, algumas com logotipo da Calvin Klein. Elas fazem poses descontraídas, com uma integrante levantando os braços acima da cabeça." 
+               class="img-fluid rounded-5 shadow-sm" 
+               loading="lazy">
+          <figcaption class="text-center mt-2 text-white">
+            As cinco integrantes do grupo NewJeans em pé contra fundo azul, com jeans largos e camisetas brancas da Calvin Klein.
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contato -->
+    <section id="contato">
+      <div class="container p-5 d-flex justify-content-center">
+        <div class="col-md-10 col-lg-8 formulario rounded-5">
+          <h2 class="mb-3">Entre em contato</h2>
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control rounded-3" placeholder="Digite seu nome completo">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="Digite seu e-mail">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="form-control rounded-4" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p class="mb-2">Acesse nossas redes:</p>
+    <div class="d-flex justify-content-center gap-3 fs-4">
+      <i class="bi bi-whatsapp"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-tiktok"></i>
+    </div>
+    <p class="mt-3 small">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
+
